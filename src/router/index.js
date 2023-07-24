@@ -1,13 +1,16 @@
 import { createRouter, createWebHistory } from "vue-router";
 
+
 import Home from '../views/Home.vue';
 
 import DefaultLayout from '../components/DefaultLayout.vue';
 import GuestLayout from '../components/GuestLayout.vue';
+import Ingredients from '../views/Ingredients.vue';
 import MealDetails from '../views/MealDetails.vue';
 import SearchByIngredients from '../views/SearchByIngredients.vue';
 import SearchByLetter from '../views/SearchByLetter.vue';
 import SearchByName from '../views/SearchByName.vue';
+
 
 const routes = [
   
@@ -24,6 +27,11 @@ const routes = [
         path: "/by-letter/:letter?",
         name: "byLetter",
         component: SearchByLetter,
+      },
+      {
+        path: "/ingredients",
+        name: "Ingredients",
+        component: Ingredients,
       },
       {
         path: "/by-ingredient/:ingredient?",

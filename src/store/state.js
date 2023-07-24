@@ -1,9 +1,11 @@
 //export const meals = ['Salmon']
 export default{
     //meals: ["Salmon"]
-    searchedMeals: []
+    searchedMeals: [],
     /*{
         loading: false,
         data: []
     }*/
+    mealsByLetter: [],
+    mealsByIngredient: [],
 }
